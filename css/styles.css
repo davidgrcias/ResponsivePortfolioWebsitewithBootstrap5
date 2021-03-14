@@ -1,0 +1,25 @@
+.navbar-collapse{
+  transition: 1s;
+}
+
+.collapse a.navbar-brand{
+  display: none;
+}
+.container > a.navbar-brand{
+  display: block;
+}
+.collapse a.ms-auto{
+  display: none;
+}
+
+@media (min-width: 992px){
+  .container > a.navbar-brand{
+    display: none;
+  }
+  .collapse a.navbar-brand{
+    display: block;
+  }
+  .collapse a.ms-auto{
+    display: block;
+  }
+}
