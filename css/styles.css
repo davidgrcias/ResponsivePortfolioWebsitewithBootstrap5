@@ -1,3 +1,6 @@
+nav.bg-primary{
+  background: linear-gradient(to bottom, #00AFFF, #0d6efd)!important;
+}
 .navbar-collapse{
   transition: 1.2s;
 }
@@ -10,10 +13,16 @@
   letter-spacing: 2px;
   font-size: 24px;
   margin-right: 0px;
+  transition: 1s;
+}
+.container > a.navbar-brand:hover{
+  color: #DCDCDC;
+  transform: scale(1.05);
 }
 .d-flex button.btn{
   color: white;
   border: 1px solid #fff;
+  transition: 1s;
 }
 .d-flex button.btn:hover{
   background: blue;
@@ -25,11 +34,22 @@ button.navbar-toggler{
   border: 4px solid white;
 }
 button.navbar-toggler:hover{
-  border: 4px solid transparent;
+  border: 4px solid white;
 }
 button.navbar-toggler:focus{
   text-shadow: none;
   border: 4px solid transparent;
+}
+nav .container .collapse .dropdown-menu{
+  background: #0d6efd!important;
+  color: white;
+}
+nav .container .collapse .dropdown-menu a{
+  color: white;
+  transition: 0.7s;
+}
+nav .container .collapse .dropdown-menu a:hover{
+  background: rgba(255,255,255,0.3)!important;
 }
 @media (min-width: 992px){
   .container > a.navbar-brand{
@@ -41,5 +61,13 @@ button.navbar-toggler:focus{
     letter-spacing: 2px;
     font-size: 24px;
     margin-right: 40px;
+    transition: 1s;
+  }
+  .navbar-collapse a.navbar-brand:hover{
+    color: #DCDCDC;
+    transform: scale(1.1);
+  }
+  nav .container .collapse .dropdown-menu{
+    margin-top: 10px;
   }
 }
