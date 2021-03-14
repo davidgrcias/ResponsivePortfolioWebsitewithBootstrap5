@@ -18,8 +18,19 @@
 .d-flex button.btn:hover{
   background: blue;
 }
-
-
+nav.shadow-blck{
+  box-shadow: 0px 0px 3px #222;
+}
+button.navbar-toggler{
+  border: 4px solid white;
+}
+button.navbar-toggler:hover{
+  border: 4px solid transparent;
+}
+button.navbar-toggler:focus{
+  text-shadow: none;
+  border: 4px solid transparent;
+}
 @media (min-width: 992px){
   .container > a.navbar-brand{
     display: none;
