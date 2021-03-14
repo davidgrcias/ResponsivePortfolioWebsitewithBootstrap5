@@ -1,25 +1,34 @@
 .navbar-collapse{
-  transition: 1s;
+  transition: 1.2s;
 }
-
-.collapse a.navbar-brand{
+.navbar-collapse a.navbar-brand{
   display: none;
 }
 .container > a.navbar-brand{
   display: block;
+  font-family: 'Viga', sans-serif;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin-right: 0px;
 }
-.collapse a.ms-auto{
-  display: none;
+.d-flex button.btn{
+  color: white;
+  border: 1px solid #fff;
 }
+.d-flex button.btn:hover{
+  background: blue;
+}
+
 
 @media (min-width: 992px){
   .container > a.navbar-brand{
     display: none;
   }
-  .collapse a.navbar-brand{
+  .navbar-collapse a.navbar-brand{
     display: block;
-  }
-  .collapse a.ms-auto{
-    display: block;
+    font-family: 'Viga', sans-serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-right: 40px;
   }
 }
